@@ -13,6 +13,6 @@ scoreboard players operation minute daytime /= 100 constants
 scoreboard players reset @a[scores={seconds=2..}] seconds
 scoreboard players reset @a[scores={timeconvention=2..}] timeconvention
 execute as @a unless score @s timeconvention matches 1.. unless score @s seconds matches 1.. run function mtc:12hcns
-execute as @a[scores={timeconvention=1}] unless @s score seconds matches 1.. run function mtc:24hcns
+execute as @a[scores={timeconvention=1}] unless score @s seconds matches 1.. run function mtc:24hcns
 execute as @a[scores={seconds=1}] unless score @s timeconvention matches 1.. run function mtc:12hcws
 execute as @a[scores={timeconvention=1,seconds=1}] run function mtc:24hcws

@@ -1,8 +1,9 @@
 #Display 12-Hour Clock (With Seconds) in the Action Bar to Players Holding a Clock With the Value of Scoreboard Objective "timeconvention" Being 12:
 scoreboard players operation second daytime = daytime daytime
-scoreboard players operation second daytime %= 6 constants
-scoreboard players operation second daytime *= 114 constants
-scoreboard players operation second daytime /= 25 constants
+scoreboard players operation second daytime %= 100 constants
+scoreboard players operation second daytime *= 360 constants
+scoreboard players operation second daytime /= 100 constants
+scoreboard players remove second daytime 60
 scoreboard players add hour daytime 6
 execute unless score hour daytime matches 12 unless score hour daytime matches 24 run scoreboard players operation hour daytime %= 12 constants
 execute if score hour daytime matches 24 run scoreboard players set hour daytime 12

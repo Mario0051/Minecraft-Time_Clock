@@ -10,7 +10,6 @@ scoreboard players reset * daytime
 
 #Set Default Constants:
 scoreboard players set 6 constants 6
-scoreboard players set 25 constants 25
 scoreboard players set 100 constants 100
-scoreboard players set 114 constants 114
+scoreboard players set 360 constants 360
 scoreboard players set 1000 constants 1000

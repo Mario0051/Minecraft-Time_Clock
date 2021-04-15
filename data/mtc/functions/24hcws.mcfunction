@@ -1,6 +1,6 @@
 #Display 24-Hour Clock (With Seconds) in the Action Bar to Players Holding a Clock With the Value of Scoreboard Objective "timeconvention" Being 24:
 scoreboard players operation second daytime = daytime daytime
-scoreboard players operation second daytime %= 6 daytime
+scoreboard players operation second daytime %= 6 constants
 scoreboard players operation second daytime *= 114 constants
 scoreboard players operation second daytime /= 25 constants
 execute if score hour daytime matches 0..9 run scoreboard players set leading0h daytime 0

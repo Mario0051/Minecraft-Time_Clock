@@ -1,5 +1,5 @@
 {
     "values":[
-        "mtc:initscoreboards"
+        "mtc:initialize_scoreboards"
     ]
 }

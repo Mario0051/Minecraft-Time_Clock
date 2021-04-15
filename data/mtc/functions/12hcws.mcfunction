@@ -3,7 +3,7 @@ scoreboard players operation second daytime = daytime daytime
 scoreboard players operation second daytime %= 100 constants
 scoreboard players operation second daytime *= 360 constants
 scoreboard players operation second daytime /= 100 constants
-scoreboard players remove second daytime 60
+scoreboard players operation second daytime %= 60 constants
 scoreboard players add hour daytime 6
 execute unless score hour daytime matches 12 unless score hour daytime matches 24 run scoreboard players operation hour daytime %= 12 constants
 execute if score hour daytime matches 24 run scoreboard players set hour daytime 12
